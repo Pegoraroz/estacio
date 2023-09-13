@@ -1,5 +1,10 @@
-a = eval((input("Digite o numero a ser fatorado: \n")))
+numero = int(input("Fatorial de: ") )
 
-while a != 0:
-    fator = a*(a-1)
-print(fator)
+resultado=1
+contagem=1
+
+while contagem <= numero:
+    resultado *= contagem
+    contagem += 1
+
+print(resultado)
